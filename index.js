@@ -13,5 +13,17 @@ app.get('/add/:n/:m', (req, res) => {
     res.json(Number(req.params.n) + Number(req.params.m));
 });
 
+app.get('/subtract/:n/:m', (req, res) => {
+    res.json(Number(req.params.n) - Number(req.params.m));
+});
+
+app.get('/multiply/:n/:m', (req, res) => {
+    res.json(Number(req.params.n) * Number(req.params.m));
+});
+
+app.get('/divide/:n/:m', (req, res) => {
+    res.json(Number(req.params.n) / Number(req.params.m));
+});
+
 
 app.listen(port);
